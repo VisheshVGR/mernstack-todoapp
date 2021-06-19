@@ -1,0 +1,131 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Oxygen', sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  background-image: linear-gradient(to bottom right, rgb(0, 82, 190), rgb(145, 251, 255));
+  background-attachment: fixed;
+  word-break: break-all;
+}
+#root{
+  height: calc(100vh - 40px);
+}
+
+.homelink{
+  text-decoration: none;
+  color: inherit;
+}
+.homelink:hover{
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Loading animation */
+.disp{ 
+  background:rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; 
+  z-index: 1;
+}
+.disp-box{
+  background: white;
+  position: relative;
+  left: calc(50% - 115px);
+  top: calc(50% - 32.5px);
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 50px; 
+  z-index: 2;
+}
+
+/* container style */
+.my-3{
+  height: calc(100% - 32px);
+}
+
+.main-cont{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: calc(100vh - 80px);
+  margin: 40px 0 0 0;
+  border-radius: 10px;
+}
+
+/* TodoList.js list style */
+.mainList{
+  height: calc(100% - 200px);
+}
+
+/* User styling */
+.user_cont{
+  background-color: white;
+  height: 100%;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+/* Offcanvas */
+.side_menu{
+  font-weight: bolder;
+  font-size: larger;
+  position: fixed;
+  left: 0;
+  top: calc(50% - 62px);
+}
+
+/* CONTACT US LINKS */
+.acontact {
+  display: inline-block;
+  min-width: 50%;
+  margin: auto;
+  padding: 1rem 1.25rem;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #343a40;
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  z-index: 1;
+}
+.acontact:after {
+  content: '';
+  display: block;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  right: 1.25rem;
+  left: 1.25rem;
+  background-color: #343a40;
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  transform-origin: bottom center;
+  z-index: -1;
+}
+
+.acontact:hover {
+  color: white;
+}
+.acontact:hover:after {
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width : 576px) {
+  #root{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .main-cont{
+  background-color: rgba(0, 0, 0, 0);
+  margin-top:0;
+  padding-top: 40px;
+  }
+}

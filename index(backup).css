@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Ubuntu', sans-serif;
+  background-image: linear-gradient(to bottom right, rgb(0, 82, 190), rgb(145, 251, 255));
+  background-attachment: fixed;
+  word-break: break-all;
+}
+#root{
+  height: calc(100vh - 40px);
+}
+.disp{ 
+  background:rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0; 
+  z-index: 1;
+}
+.disp-box{
+  background: white;
+  position: relative;
+  left: calc(50% - 115px);
+  top: calc(50% - 32.5px);
+  display: inline-block;
+  font-size: 30px;
+  padding: 10px 20px;
+  border-radius: 50px; 
+
+}
+h1{
+  color:white;
+  text-align: center;
+}
+
+.my-3{
+  height: calc(100% - 32px);
+  /* height: 100%; */
+}
+.main-cont{
+  background-color: rgba(0, 0, 0, 0.3);
+  height: calc(100vh - 80px);
+  margin: 40px 0 0 0;
+}
+
+.main-list{
+  overflow: auto;
+  height: calc(100% - 200px);
+}
+/* list flexbox props */
+.f-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left{
+  margin-right: 2%;
+}
+
+.right{
+  margin-left: 2%;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width : 576px) {
+  #root{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .main-cont{
+  background-color: rgba(0, 0, 0, 0);
+  margin-top:0;
+  padding-top: 40px;
+  }
+}
