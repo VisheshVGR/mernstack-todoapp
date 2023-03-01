@@ -1,7 +1,7 @@
 # Todo App 
 ###### (Work in progress...)
 
-Access by visiting : [Todo App](https://mernstack-todoapp.herokuapp.com/ "Todo App")
+Access by visiting : [Todo App](https://mernstack-todoapp.onrender.com/ "Todo App")
 
 ### Components used :-
 
